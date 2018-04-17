@@ -63,21 +63,21 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     /***************************************************************/
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
             return profileArray.count
-        case 1:
-            return 3
-        case 2:
-            return 1
-        case 3:
-            return 3
-        case 4:
-            return 0
+//        case 1:
+//            return 3
+//        case 2:
+//            return 1
+//        case 3:
+//            return 3
+//        case 4:
+//            return 0
         default:
             return 0
         }
@@ -132,13 +132,14 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
             return "Profile"
-        } else if section == 1 {
-            return "Standards"
-        } else if section == 3 {
-            return "About"
-        } else if section == 4 {
-            return "Version 1.0"
         }
+//        else if section == 1 {
+//            return "Standards"
+//        } else if section == 3 {
+//            return "About"
+//        } else if section == 4 {
+//            return "Version 1.0"
+//        }
         return "Hi"
     }
     
